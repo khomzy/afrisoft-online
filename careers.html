@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Afrisoft Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo"><span class="logo-text">Afrisoft Online</span></div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contacts</a></li>
+                </ul>
+                <button class="mobile-menu-toggle"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="section-badge">Join Our Team</div>
+                <h1 class="page-title">Build the Future of Technology in Malawi.</h1>
+                <p class="page-description">We are always looking for passionate, innovative, and driven individuals to join Afrisoft Technologies. Help us build cutting-edge AI solutions, custom software, and digital infrastructure that empowers local businesses to thrive.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 1: WHY WORK WITH US -->
+        <section class="content-section">
+            <div class="container">
+                <div class="detail-grid">
+                    <div class="detail-card">
+                        <h3>Work on Cutting-Edge Tech</h3>
+                        <p>From locally hosted AI agents and custom business operating systems to mobile apps and cloud infrastructure, you won't be stuck maintaining legacy code. You'll be building the future of tech in Africa.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h3>Make a Real Local Impact</h3>
+                        <p>Your work directly helps Malawian businesses digitize, automate, and grow. We are proud to be building homegrown solutions that solve real, everyday problems in our own communities.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h3>Grow Your Career</h3>
+                        <p>We believe in continuous learning. Join a collaborative team where you can expand your technical skills, work on diverse projects, and advance your career in the rapidly growing tech industry.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: WHO WE ARE LOOKING FOR -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-badge">Open Interests</div>
+                <h2 class="page-title">Areas We Are Always Looking to Expand</h2>
+                <p class="page-description">While we may not have a specific job opening today, we are always interested in connecting with talented individuals in the following areas:</p>
+                <div class="detail-grid">
+                    <div class="detail-card">
+                        <h3>Software & Web Developers</h3>
+                        <p>Full-stack developers, frontend experts, and mobile app builders who love writing clean, efficient code and creating seamless user experiences.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h3>AI & Automation Engineers</h3>
+                        <p>Tech enthusiasts interested in machine learning, local LLM deployment, prompt engineering, and building intelligent workflow automations.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h3>IT, Cloud & Hardware Support</h3>
+                        <p>System admins, networking experts, and hardware technicians who excel at keeping infrastructure secure, fast, and reliable.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h3>UI/UX Design & Digital Marketing</h3>
+                        <p>Creative minds who can design beautiful interfaces, craft compelling brand identities, and drive growth through SEO and digital campaigns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: APPLICATION FORM -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-badge">Application Form</div>
+                <h2 class="page-title">Drop Your Details for Future Opportunities</h2>
+                <p class="page-description">Don't see your exact role above? No problem. Fill out the form below with your details and experience. If a suitable opportunity arises that matches your skills, our team will reach out to you directly.</p>
+                
+                <form class="career-form" id="careerForm" action="https://formspree.io/f/xkoandvy" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="_subject" value="New Afrisoft Online career application">
+                    <div class="form-section">
+                        <h4>Your Personal Details</h4>
+                        <div class="form-group">
+                            <label for="careerName">Full Name *</label>
+                            <input type="text" id="careerName" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="careerEmail">Email Address *</label>
+                                <input type="email" id="careerEmail" name="email" required placeholder="you@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="careerPhone">Phone Number *</label>
+                                <input type="tel" id="careerPhone" name="phone" required placeholder="+265 882 XXX XXX">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h4>Your Professional Background</h4>
+                        <div class="form-group">
+                            <label for="careerCourse">Major / Course of Study / Certification *</label>
+                            <input type="text" id="careerCourse" name="course_or_certification" required placeholder="e.g., Computer Science, IT, UI/UX Design, Business Info Systems">
+                        </div>
+                        <div class="form-group">
+                            <label for="careerPortfolio">Portfolio / GitHub / LinkedIn URL (Optional)</label>
+                            <input type="url" id="careerPortfolio" name="portfolio_url" placeholder="https://github.com/yourusername or your portfolio link">
+                        </div>
+                        <div class="form-group">
+                            <label for="careerExperience">Experience & Skills *</label>
+                            <textarea id="careerExperience" name="experience_and_skills" rows="6" required placeholder="Tell us about your technical skills, notable projects, work experience, or internships. What are you passionate about building?"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="careerCV">Upload CV / Resume (Optional but Recommended)</label>
+                            <input type="file" id="careerCV" name="cv_resume" accept=".pdf,.doc,.docx">
+                            <small style="color: #666; font-size: 0.85rem;">Accepted formats: PDF, DOC, DOCX</small>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Submit Application</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-brand">
+                    <div class="logo-text">Afrisoft Online</div>
+                    <p>Premium IT solutions for modern businesses. Transforming ideas into digital excellence.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h5>Services</h5>
+                        <ul>
+                            <li><a href="web-development.html">Web Development</a></li>
+                            <li><a href="cloud-hosting.html">Cloud Hosting</a></li>
+                            <li><a href="mobile-apps.html">Mobile Apps</a></li>
+                            <li><a href="ai-automation.html">AI Automation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>Company</h5>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="contact.html">Help Center</a></li>
+                            <li><a href="contact.html">Client Portal</a></li>
+                            <li><a href="contact.html">System Status</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Afrisoft Technologies / Afrisoft Online. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
