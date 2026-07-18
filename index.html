@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Afrisoft Online — Technology Built For The Future</title>
-<meta name="description" content="Afrisoft Online designs websites, AI systems, mobile apps, automation tools, and digital experiences for businesses in Malawi and beyond.">
+<title>Afrisoft Online — Local IT Services Built For The Future</title>
+<meta name="description" content="Afrisoft Online — Blantyre's premier technology company. Websites, AI systems, mobile apps, and business software built locally for Malawi and beyond.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 <script>
-tailwind.config={theme:{extend:{colors:{primary:'#FFFFFF',secondary:'#F5F7FA',charcoal:'#111827','electric-blue':'#3B82F6','deep-purple':'#7C3AED','cyan-glow':'#06B6D4','soft-silver':'#E5E7EB'},fontFamily:{sans:['Inter','sans-serif'],mono:['JetBrains Mono','monospace']}}}}
+tailwind.config={theme:{extend:{colors:{primary:'#FFFFFF',secondary:'#F5F7FA',charcoal:'#111827','electric-blue':'#3B82F6','deep-purple':'#7C3AED','cyan-glow':'#06B6D4'},fontFamily:{sans:['Inter','sans-serif'],mono:['JetBrains Mono','monospace']}}}}
 </script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -41,17 +41,10 @@ body{font-family:'Inter',sans-serif;background:#FFFFFF;color:#111827;overflow-x:
 @keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-20px) rotate(2deg)}}
 @keyframes floatReverse{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(20px) rotate(-2deg)}}
 @keyframes spin-slow{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-@keyframes wave{0%,100%{transform:rotate(0deg)}25%{transform:rotate(-20deg)}75%{transform:rotate(20deg)}}
-@keyframes rbounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 @keyframes techFloat{0%,100%{transform:translate(0,0) rotate(0deg)}25%{transform:translate(10px,-15px) rotate(2deg)}50%{transform:translate(-5px,-25px) rotate(-1deg)}75%{transform:translate(-15px,-10px) rotate(1deg)}}
 .animate-float{animation:float 6s ease-in-out infinite}
 .animate-float-reverse{animation:floatReverse 7s ease-in-out infinite}
 .animate-spin-slow{animation:spin-slow 30s linear infinite}
-.robot-wave{transform-origin:70% 0%;animation:wave .6s ease-in-out}
-.robot-bounce{animation:rbounce .5s ease}
-.chat-msg{opacity:0;transform:translateY(10px);transition:all .4s ease}.chat-msg.show{opacity:1;transform:translateY(0)}
-.pricing-popular{position:relative;border:2px solid transparent;background-image:linear-gradient(#fff,#fff),linear-gradient(135deg,#3B82F6,#7C3AED);background-origin:border-box;background-clip:padding-box,border-box}
-.tech-float{position:absolute;animation:techFloat 8s ease-in-out infinite}
 .nav-glass{background:rgba(255,255,255,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,0.06)}
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:100000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s;padding:16px}
 .modal-overlay.active{opacity:1;pointer-events:all}
@@ -61,11 +54,8 @@ body{font-family:'Inter',sans-serif;background:#FFFFFF;color:#111827;overflow-x:
 .toast.show{transform:translateY(0);opacity:1}
 .toast-success{background:linear-gradient(135deg,#10B981,#059669)}
 .toast-error{background:linear-gradient(135deg,#EF4444,#DC2626)}
-.dashboard-mock{background:#0f172a;border-radius:12px;overflow:hidden;font-family:'JetBrains Mono',monospace}
-.dashboard-mock .dash-bar{height:6px;border-radius:3px}
-.dashboard-mock .dash-row{display:flex;align-items:center;gap:8px;padding:6px 10px;border-bottom:1px solid rgba(255,255,255,0.05)}
-.dashboard-mock .dash-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
-@media(max-width:640px){.dashboard-mock{font-size:8px}.dashboard-mock .dash-bar{height:4px}}
+.process-line{position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,transparent,#3B82F6,#7C3AED,transparent);transform:translateX(-50%)}
+@media(max-width:768px){.process-line{left:20px}}
 </style>
 </head>
 <body>
@@ -85,8 +75,6 @@ body{font-family:'Inter',sans-serif;background:#FFFFFF;color:#111827;overflow-x:
 <div class="hidden lg:flex items-center gap-7">
 <a href="#services" class="text-[13px] font-medium text-gray-500 hover:text-charcoal transition-colors">Services</a>
 <a href="#work" class="text-[13px] font-medium text-gray-500 hover:text-charcoal transition-colors">Our Work</a>
-<a href="#ai-demo" class="text-[13px] font-medium text-gray-500 hover:text-charcoal transition-colors">AI Agents</a>
-<a href="#pricing" class="text-[13px] font-medium text-gray-500 hover:text-charcoal transition-colors">Pricing</a>
 <a href="#contact" class="text-[13px] font-medium text-gray-500 hover:text-charcoal transition-colors">Contact</a>
 </div>
 <div class="hidden lg:block"><a href="#contact" class="btn-primary !py-2.5 !px-6 !text-[13px]">Start Your Project</a></div>
@@ -103,8 +91,6 @@ body{font-family:'Inter',sans-serif;background:#FFFFFF;color:#111827;overflow-x:
 <div class="pt-24 px-8 flex flex-col gap-5">
 <a href="#services" class="text-2xl font-semibold tracking-tight ml">Services</a>
 <a href="#work" class="text-2xl font-semibold tracking-tight ml">Our Work</a>
-<a href="#ai-demo" class="text-2xl font-semibold tracking-tight ml">AI Agents</a>
-<a href="#pricing" class="text-2xl font-semibold tracking-tight ml">Pricing</a>
 <a href="#contact" class="text-2xl font-semibold tracking-tight ml">Contact</a>
 <div class="mt-6"><a href="#contact" class="btn-primary text-base !py-3.5 !px-8 ml">Start Your Project</a></div>
 </div>
@@ -144,13 +130,13 @@ body{font-family:'Inter',sans-serif;background:#FFFFFF;color:#111827;overflow-x:
 <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-12 sm:pt-16 pb-16 sm:pb-20">
 <div class="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full glass-card mb-6 sm:mb-8 section-fade" style="transition-delay:.1s">
 <div class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></div>
-<span class="text-[10px] sm:text-xs font-medium text-gray-500 tracking-wide">BUILDING THE FUTURE OF BUSINESS TECHNOLOGY</span>
+<span class="text-[10px] sm:text-xs font-medium text-gray-500 tracking-wide">BLANTYRE'S PREMIER TECHNOLOGY COMPANY</span>
 </div>
 <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.08] mb-5 sm:mb-6 section-fade" style="transition-delay:.2s">
-Transform Your Business With<br><span class="gradient-text">Technology Built</span> For The Future
+Transform Your Business With<br><span class="gradient-text">Local IT Services</span> Built For The Future
 </h1>
 <p class="text-base sm:text-lg md:text-xl text-gray-500 font-light max-w-3xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2 section-fade" style="transition-delay:.3s">
-We design websites, AI systems, mobile apps, automation tools, and digital experiences that help businesses grow faster, operate smarter, and stand out.
+We design websites, AI systems, mobile apps, business software, and digital experiences — all built right here in Malawi for businesses that refuse to settle.
 </p>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 section-fade" style="transition-delay:.4s">
 <a href="#contact" class="btn-primary !text-sm sm:!text-base !py-3.5 sm:!py-4 !px-8 sm:!px-10">Start Your Project</a>
@@ -288,127 +274,38 @@ We design websites, AI systems, mobile apps, automation tools, and digital exper
 <div class="text-center mb-10 sm:mb-16 section-fade">
 <span class="text-[10px] sm:text-xs font-semibold tracking-[0.15em] sm:tracking-[0.2em] text-deep-purple uppercase">Our Work</span>
 <h2 class="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight mt-3 sm:mt-4 mb-3 sm:mb-4">Projects That <span class="gradient-text">Speak</span></h2>
-<p class="text-gray-500 font-light text-sm sm:text-lg max-w-2xl mx-auto px-2">Real products, real impact. Click any project to learn more.</p>
+<p class="text-gray-500 font-light text-sm sm:text-lg max-w-2xl mx-auto px-2">A glimpse into the solutions we've built for real businesses.</p>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-
-<!-- Renmal Capital -->
-<div class="group cursor-pointer section-fade" style="transition-delay:.05s" onclick="openProject('renmal')">
-<div class="rounded-xl sm:rounded-2xl overflow-hidden bg-charcoal shadow-xl hover:shadow-2xl transition-shadow duration-500">
-<div class="p-3 sm:p-4 pb-0"><div class="bg-gray-800 rounded-t-lg p-1"><div class="flex gap-1 px-2 pt-1.5"><div class="w-1.5 h-1.5 rounded-full bg-red-400/60"></div><div class="w-1.5 h-1.5 rounded-full bg-yellow-400/60"></div><div class="w-1.5 h-1.5 rounded-full bg-green-400/60"></div></div>
-<div class="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 h-36 sm:h-44 mt-1.5 rounded-b-lg p-3 sm:p-4 flex flex-col">
-<div class="flex items-center gap-2 mb-2"><div class="w-6 h-6 rounded bg-green-500/20 flex items-center justify-center"><span class="iconify text-green-400" data-icon="lucide:landmark" data-width="12"></span></div><span class="text-green-300/70 text-[9px] sm:text-[10px] font-mono font-semibold">renmalcapitallimited.xyz</span></div>
-<div class="flex-1 flex items-end gap-2"><div class="flex-1"><div class="text-white/80 text-xs sm:text-sm font-bold mb-1">Apply For A Loan</div><div class="h-5 sm:h-6 bg-white/10 rounded-md w-3/4"></div><div class="h-5 sm:h-6 bg-green-500/20 rounded-md w-1/2 mt-1.5"></div></div><div class="hidden sm:block w-20 h-16 bg-white/5 rounded-lg"></div></div>
+<div class="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
+<!-- Renmal Capital — real screenshot -->
+<div class="group section-fade" style="transition-delay:.05s">
+<div class="rounded-xl sm:rounded-2xl overflow-hidden bg-charcoal shadow-xl hover:shadow-2xl transition-all duration-500">
+<div class="relative overflow-hidden">
+<img src="https://z-cdn-media.chatglm.cn/files/f350cc9c-864a-4e9b-871f-5e65b6bae538.png?auth_key=1884413986-421d5e3c946b4fd6a1b1ad5f7097e6f1-0-18ca00021dc358d101494b5bfa9c220d" alt="Renmal Capital Limited Website" class="w-full h-auto transition-transform duration-700 group-hover:scale-105">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 flex items-center gap-2"><div class="w-7 h-7 rounded-lg bg-green-500/20 flex items-center justify-center"><span class="iconify text-green-400" data-icon="lucide:landmark" data-width="14"></span></div><span class="text-green-300/80 text-[10px] sm:text-xs font-mono font-medium">renmalcapitallimited.xyz</span></div>
+</div>
+<div class="p-4 sm:p-5">
+<h3 class="text-white font-semibold text-sm sm:text-base mb-1">Renmal Capital Limited</h3>
+<p class="text-gray-400 text-[11px] sm:text-xs leading-relaxed mb-3 sm:mb-4">A microfinance company in Blantyre trusted us to build their website where their users come to when they want a loan.</p>
+<a href="https://www.renmalcapitallimited.xyz" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-electric-blue text-xs sm:text-sm font-semibold hover:gap-3 transition-all">Visit Site <span class="iconify" data-icon="lucide:arrow-up-right" data-width="14"></span></a>
 </div></div></div>
-<div class="p-3 sm:p-4 pt-2 sm:pt-3 flex items-center justify-between">
-<div><h3 class="text-white font-semibold text-sm sm:text-base">Renmal Capital Limited</h3><p class="text-gray-500 text-[11px] sm:text-xs mt-0.5">Microfinance Website</p></div>
-<span class="iconify text-gray-500 group-hover:text-white group-hover:translate-x-1 transition-all" data-icon="lucide:arrow-right" data-width="16"></span>
-</div></div></div>
-
-<!-- Afrisoft Store -->
-<div class="group cursor-pointer section-fade" style="transition-delay:.1s" onclick="openProject('store')">
-<div class="rounded-xl sm:rounded-2xl overflow-hidden bg-charcoal shadow-xl hover:shadow-2xl transition-shadow duration-500">
-<div class="p-3 sm:p-4 pb-0"><div class="bg-gray-800 rounded-t-lg p-1"><div class="flex gap-1 px-2 pt-1.5"><div class="w-1.5 h-1.5 rounded-full bg-red-400/60"></div><div class="w-1.5 h-1.5 rounded-full bg-yellow-400/60"></div><div class="w-1.5 h-1.5 rounded-full bg-green-400/60"></div></div>
-<div class="bg-gradient-to-br from-purple-900 via-violet-800 to-fuchsia-900 h-36 sm:h-44 mt-1.5 rounded-b-lg p-3 sm:p-4 flex flex-col">
-<div class="flex items-center gap-2 mb-2"><div class="w-6 h-6 rounded bg-gradient-to-br from-electric-blue to-deep-purple flex items-center justify-center"><span class="text-white text-[8px] font-bold">A</span></div><span class="text-purple-300/70 text-[9px] sm:text-[10px] font-mono font-semibold">afrisoft.store</span></div>
-<div class="grid grid-cols-3 gap-1.5 flex-1"><div class="bg-white/5 rounded-lg p-1.5 flex flex-col items-center justify-center"><span class="iconify text-purple-300/40" data-icon="lucide:box" data-width="16"></span><div class="text-white/30 text-[7px] mt-0.5">Money OS</div></div><div class="bg-white/5 rounded-lg p-1.5 flex flex-col items-center justify-center"><span class="iconify text-purple-300/40" data-icon="lucide:shield" data-width="16"></span><div class="text-white/30 text-[7px] mt-0.5">NexGuard</div></div><div class="bg-white/5 rounded-lg p-1.5 flex flex-col items-center justify-center"><span class="iconify text-purple-300/40" data-icon="lucide:gamepad-2" data-width="16"></span><div class="text-white/30 text-[7px] mt-0.5">Games</div></div></div>
-</div></div></div>
-<div class="p-3 sm:p-4 pt-2 sm:pt-3 flex items-center justify-between">
-<div><h3 class="text-white font-semibold text-sm sm:text-base">Afrisoft Store</h3><p class="text-gray-500 text-[11px] sm:text-xs mt-0.5">Software Showcase</p></div>
-<span class="iconify text-gray-500 group-hover:text-white group-hover:translate-x-1 transition-all" data-icon="lucide:arrow-right" data-width="16"></span>
-</div></div></div>
-
 <!-- Money OS -->
-<div class="group cursor-pointer section-fade" style="transition-delay:.15s" onclick="openProject('moneyos')">
-<div class="rounded-xl sm:rounded-2xl overflow-hidden bg-charcoal shadow-xl hover:shadow-2xl transition-shadow duration-500">
+<div class="group section-fade" style="transition-delay:.1s">
+<div class="rounded-xl sm:rounded-2xl overflow-hidden bg-charcoal shadow-xl hover:shadow-2xl transition-all duration-500">
 <div class="p-3 sm:p-4 pb-0"><div class="bg-gray-800 rounded-t-lg p-1"><div class="flex gap-1 px-2 pt-1.5"><div class="w-1.5 h-1.5 rounded-full bg-red-400/60"></div><div class="w-1.5 h-1.5 rounded-full bg-yellow-400/60"></div><div class="w-1.5 h-1.5 rounded-full bg-green-400/60"></div></div>
-<div class="bg-gradient-to-br from-emerald-900 via-teal-800 to-cyan-900 h-36 sm:h-44 mt-1.5 rounded-b-lg p-3 sm:p-4 font-mono text-[8px] sm:text-[9px]">
-<div class="flex items-center justify-between mb-2"><span class="text-cyan-300/60 font-semibold">MONEY OS — DASHBOARD</span><span class="text-green-400/60">● Live</span></div>
-<div class="grid grid-cols-3 gap-1.5 mb-2"><div class="bg-white/5 rounded p-1.5"><div class="text-white/30 text-[7px]">Total Loans</div><div class="text-green-300/70 font-bold text-[10px] sm:text-xs">MK 12.4M</div></div><div class="bg-white/5 rounded p-1.5"><div class="text-white/30 text-[7px]">Collected</div><div class="text-cyan-300/70 font-bold text-[10px] sm:text-xs">MK 8.1M</div></div><div class="bg-white/5 rounded p-1.5"><div class="text-white/30 text-[7px]">Clients</div><div class="text-purple-300/70 font-bold text-[10px] sm:text-xs">2,847</div></div></div>
-<div class="space-y-1"><div class="flex items-center gap-1.5"><div class="w-1 h-1 rounded-full bg-green-400"></div><div class="text-white/40 flex-1">John Banda — MK 50,000</div><div class="text-green-400/60">Paid</div></div><div class="flex items-center gap-1.5"><div class="w-1 h-1 rounded-full bg-yellow-400"></div><div class="text-white/40 flex-1">Mary Phiri — MK 120,000</div><div class="text-yellow-400/60">Pending</div></div><div class="flex items-center gap-1.5"><div class="w-1 h-1 rounded-full bg-green-400"></div><div class="text-white/40 flex-1">Chimwemwe — MK 80,000</div><div class="text-green-400/60">Paid</div></div></div>
+<div class="bg-gradient-to-br from-emerald-900 via-teal-800 to-cyan-900 h-44 sm:h-56 mt-1.5 rounded-b-lg p-3 sm:p-4 font-mono text-[8px] sm:text-[9px]">
+<div class="flex items-center justify-between mb-2.5"><span class="text-cyan-300/60 font-semibold">MONEY OS — DASHBOARD</span><span class="text-green-400/60">● Live</span></div>
+<div class="grid grid-cols-3 gap-1.5 sm:gap-2 mb-2.5"><div class="bg-white/5 rounded p-1.5 sm:p-2"><div class="text-white/30 text-[7px]">Total Loans</div><div class="text-green-300/70 font-bold text-[10px] sm:text-xs">MK 12.4M</div></div><div class="bg-white/5 rounded p-1.5 sm:p-2"><div class="text-white/30 text-[7px]">Collected</div><div class="text-cyan-300/70 font-bold text-[10px] sm:text-xs">MK 8.1M</div></div><div class="bg-white/5 rounded p-1.5 sm:p-2"><div class="text-white/30 text-[7px]">Clients</div><div class="text-purple-300/70 font-bold text-[10px] sm:text-xs">2,847</div></div></div>
+<div class="space-y-1.5"><div class="flex items-center gap-1.5"><div class="w-1 h-1 rounded-full bg-green-400"></div><div class="text-white/40 flex-1">John Banda — MK 50,000</div><div class="text-green-400/60">Paid</div></div><div class="flex items-center gap-1.5"><div class="w-1 h-1 rounded-full bg-yellow-400"></div><div class="text-white/40 flex-1">Mary Phiri — MK 120,000</div><div class="text-yellow-400/60">Pending</div></div><div class="flex items-center gap-1.5"><div class="w-1 h-1 rounded-full bg-green-400"></div><div class="text-white/40 flex-1">Chimwemwe — MK 80,000</div><div class="text-green-400/60">Paid</div></div></div>
 </div></div></div>
-<div class="p-3 sm:p-4 pt-2 sm:pt-3 flex items-center justify-between">
-<div><h3 class="text-white font-semibold text-sm sm:text-base">Money OS</h3><p class="text-gray-500 text-[11px] sm:text-xs mt-0.5">Loan & Payment Tracker</p></div>
-<span class="iconify text-gray-500 group-hover:text-white group-hover:translate-x-1 transition-all" data-icon="lucide:arrow-right" data-width="16"></span>
+<div class="p-4 sm:p-5">
+<h3 class="text-white font-semibold text-sm sm:text-base mb-1">Money OS</h3>
+<p class="text-gray-400 text-[11px] sm:text-xs leading-relaxed mb-3 sm:mb-4">An internal management software for tracking payments and loans. Trusted by over 100 microfinance institutions.</p>
+<a href="https://afrisoft.store" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-cyan-glow text-xs sm:text-sm font-semibold hover:gap-3 transition-all">Learn More <span class="iconify" data-icon="lucide:arrow-up-right" data-width="14"></span></a>
 </div></div></div>
-
-<!-- NexGuard -->
-<div class="group cursor-pointer section-fade" style="transition-delay:.2s" onclick="openProject('nexguard')">
-<div class="rounded-xl sm:rounded-2xl overflow-hidden bg-charcoal shadow-xl hover:shadow-2xl transition-shadow duration-500 relative">
-<div class="absolute top-3 right-3 z-10 px-2 py-0.5 rounded-full bg-amber-500/20 border border-amber-500/30"><span class="text-amber-300 text-[9px] font-semibold">IN DEVELOPMENT</span></div>
-<div class="p-3 sm:p-4 pb-0"><div class="bg-gray-800 rounded-t-lg p-1"><div class="flex gap-1 px-2 pt-1.5"><div class="w-1.5 h-1.5 rounded-full bg-red-400/60"></div><div class="w-1.5 h-1.5 rounded-full bg-yellow-400/60"></div><div class="w-1.5 h-1.5 rounded-full bg-green-400/60"></div></div>
-<div class="bg-gradient-to-br from-red-900 via-rose-800 to-orange-900 h-36 sm:h-44 mt-1.5 rounded-b-lg flex flex-col items-center justify-center p-3 sm:p-4">
-<span class="iconify text-red-300/30 mb-2" data-icon="lucide:radio" data-width="28"></span>
-<div class="flex items-center gap-1 mb-1"><div class="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"></div><span class="text-red-300/50 text-[9px] font-mono">RADIO WAVE DETECTION ACTIVE</span></div>
-<div class="text-white/20 text-[8px] font-mono">MOTION: NONE • ZONES: 4 • STATUS: ARMED</div>
-</div></div></div>
-<div class="p-3 sm:p-4 pt-2 sm:pt-3 flex items-center justify-between">
-<div><h3 class="text-white font-semibold text-sm sm:text-base">NexGuard</h3><p class="text-gray-500 text-[11px] sm:text-xs mt-0.5">Radio Wave Security</p></div>
-<span class="iconify text-gray-500 group-hover:text-white group-hover:translate-x-1 transition-all" data-icon="lucide:arrow-right" data-width="16"></span>
-</div></div></div>
-
-<!-- Afrisoft Online POS -->
-<div class="group cursor-pointer section-fade" style="transition-delay:.25s" onclick="openProject('pos')">
-<div class="rounded-xl sm:rounded-2xl overflow-hidden bg-charcoal shadow-xl hover:shadow-2xl transition-shadow duration-500">
-<div class="p-3 sm:p-4 pb-0"><div class="bg-gray-800 rounded-t-lg p-1"><div class="flex gap-1 px-2 pt-1.5"><div class="w-1.5 h-1.5 rounded-full bg-red-400/60"></div><div class="w-1.5 h-1.5 rounded-full bg-yellow-400/60"></div><div class="w-1.5 h-1.5 rounded-full bg-green-400/60"></div></div>
-<div class="bg-gradient-to-br from-sky-900 via-blue-800 to-indigo-900 h-36 sm:h-44 mt-1.5 rounded-b-lg p-3 sm:p-4 font-mono text-[8px] sm:text-[9px]">
-<div class="flex items-center justify-between mb-2"><span class="text-sky-300/60 font-semibold">AFRISOFT ONLINE POS</span><span class="text-green-400/60 text-[8px]">Terminal #01</span></div>
-<div class="space-y-1 mb-2"><div class="flex justify-between text-white/40"><span>Sugar 1kg x2</span><span>MK 2,800</span></div><div class="flex justify-between text-white/40"><span>Cooking Oil 5L</span><span>MK 15,000</span></div><div class="flex justify-between text-white/40"><span>Soap x4</span><span>MK 3,200</span></div></div>
-<div class="border-t border-white/10 pt-1.5 flex justify-between"><span class="text-white/60 font-semibold">TOTAL</span><span class="text-green-300 font-bold text-xs sm:text-sm">MK 21,000</span></div>
-</div></div></div>
-<div class="p-3 sm:p-4 pt-2 sm:pt-3 flex items-center justify-between">
-<div><h3 class="text-white font-semibold text-sm sm:text-base">Afrisoft Online POS</h3><p class="text-gray-500 text-[11px] sm:text-xs mt-0.5">Point of Sale System</p></div>
-<span class="iconify text-gray-500 group-hover:text-white group-hover:translate-x-1 transition-all" data-icon="lucide:arrow-right" data-width="16"></span>
-</div></div></div>
-
-<!-- Kuphanda -->
-<div class="group section-fade" style="transition-delay:.3s">
-<a href="https://afrisoft.store" target="_blank" rel="noopener" class="block rounded-xl sm:rounded-2xl overflow-hidden bg-charcoal shadow-xl hover:shadow-2xl transition-shadow duration-500">
-<div class="h-36 sm:h-44 bg-gradient-to-br from-amber-900 via-orange-800 to-yellow-900 flex flex-col items-center justify-center p-4">
-<span class="iconify text-amber-300/40 mb-2" data-icon="lucide:book-open" data-width="32"></span>
-<div class="text-amber-200/50 text-sm font-bold">Kuphanda</div>
-<div class="text-amber-300/30 text-[10px] font-mono mt-1">Offline PDF Reader</div>
-</div>
-<div class="p-3 sm:p-4 flex items-center justify-between">
-<div><h3 class="text-white font-semibold text-sm sm:text-base">Kuphanda</h3><p class="text-gray-500 text-[11px] sm:text-xs mt-0.5">Offline PDF Reader</p></div>
-<span class="iconify text-gray-500 group-hover:text-amber-400 transition-colors" data-icon="lucide:external-link" data-width="14"></span>
-</div></a></div>
-
-<!-- LivCast -->
-<div class="group section-fade" style="transition-delay:.35s">
-<a href="https://afrisoft.store" target="_blank" rel="noopener" class="block rounded-xl sm:rounded-2xl overflow-hidden bg-charcoal shadow-xl hover:shadow-2xl transition-shadow duration-500">
-<div class="h-36 sm:h-44 bg-gradient-to-br from-rose-900 via-pink-800 to-fuchsia-900 flex flex-col items-center justify-center p-4">
-<span class="iconify text-rose-300/40 mb-2" data-icon="lucide:video" data-width="32"></span>
-<div class="text-rose-200/50 text-sm font-bold">LivCast</div>
-<div class="text-rose-300/30 text-[10px] font-mono mt-1">Streaming Software</div>
-</div>
-<div class="p-3 sm:p-4 flex items-center justify-between">
-<div><h3 class="text-white font-semibold text-sm sm:text-base">LivCast</h3><p class="text-gray-500 text-[11px] sm:text-xs mt-0.5">Streaming Platform</p></div>
-<span class="iconify text-gray-500 group-hover:text-rose-400 transition-colors" data-icon="lucide:external-link" data-width="14"></span>
-</div></a></div>
-
-<!-- Sky Assault -->
-<div class="group section-fade" style="transition-delay:.4s">
-<a href="https://afrisoft.store/games/" target="_blank" rel="noopener" class="block rounded-xl sm:rounded-2xl overflow-hidden bg-charcoal shadow-xl hover:shadow-2xl transition-shadow duration-500">
-<div class="h-36 sm:h-44 bg-gradient-to-br from-indigo-900 via-blue-800 to-cyan-900 flex flex-col items-center justify-center p-4">
-<span class="iconify text-indigo-300/40 mb-2" data-icon="lucide:gamepad-2" data-width="32"></span>
-<div class="text-indigo-200/50 text-sm font-bold">Sky Assault</div>
-<div class="text-indigo-300/30 text-[10px] font-mono mt-1">Video Game</div>
-</div>
-<div class="p-3 sm:p-4 flex items-center justify-between">
-<div><h3 class="text-white font-semibold text-sm sm:text-base">Sky Assault</h3><p class="text-gray-500 text-[11px] sm:text-xs mt-0.5">Video Game</p></div>
-<span class="iconify text-gray-500 group-hover:text-indigo-400 transition-colors" data-icon="lucide:external-link" data-width="14"></span>
-</div></a></div>
-
 </div></div>
 </section>
-
-<!-- PROJECT MODAL -->
-<div class="modal-overlay" id="projectModal" onclick="if(event.target===this)closeProject()">
-<div class="modal-content">
-<div class="p-5 sm:p-8" id="projectModalContent"></div>
-</div>
-</div>
 
 <!-- WHY CHOOSE US -->
 <section class="py-16 sm:py-24 relative overflow-hidden">
@@ -474,64 +371,6 @@ We design websites, AI systems, mobile apps, automation tools, and digital exper
 </div></div></div>
 </section>
 
-<!-- AI AGENT DEMO -->
-<section class="py-16 sm:py-24 bg-secondary relative overflow-hidden" id="ai-demo">
-<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-deep-purple/5 rounded-full blur-[150px]"></div>
-<div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-<div class="text-center mb-10 sm:mb-16 section-fade">
-<span class="text-[10px] sm:text-xs font-semibold tracking-[0.15em] sm:tracking-[0.2em] text-deep-purple uppercase">Interactive Demo</span>
-<h2 class="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight mt-3 sm:mt-4 mb-3 sm:mb-4">Meet Your AI <span class="gradient-text">Agent</span></h2>
-<p class="text-gray-500 font-light text-sm sm:text-lg max-w-2xl mx-auto px-2">Click and interact with our AI robot. This is what we can build for your business.</p>
-</div>
-<div class="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-<div class="flex justify-center section-fade">
-<div class="relative" id="robotContainer">
-<div class="robot-body" id="robotBody">
-<svg width="200" height="260" viewBox="0 0 240 300" fill="none" xmlns="http://www.w3.org/2000/svg" id="robotSvg" class="sm:w-[240px] sm:h-auto mx-auto">
-<line x1="120" y1="20" x2="120" y2="5" stroke="url(#grad1)" stroke-width="3" stroke-linecap="round"/>
-<circle cx="120" cy="5" r="5" fill="url(#grad1)" id="antennaLight"><animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/></circle>
-<rect x="60" y="20" width="120" height="90" rx="20" fill="url(#headGrad)" stroke="url(#grad1)" stroke-width="2"/>
-<g id="robotEyes"><circle cx="95" cy="60" r="14" fill="#1a1a2e" stroke="url(#grad1)" stroke-width="1.5"/><circle cx="145" cy="60" r="14" fill="#1a1a2e" stroke="url(#grad1)" stroke-width="1.5"/><circle cx="95" cy="60" r="8" fill="url(#grad1)" class="robot-eye" id="leftEye"/><circle cx="145" cy="60" r="8" fill="url(#grad1)" class="robot-eye" id="rightEye"/><circle cx="92" cy="57" r="2.5" fill="white" opacity="0.8" class="robot-eye" id="leftPupil"/><circle cx="142" cy="57" r="2.5" fill="white" opacity="0.8" class="robot-eye" id="rightPupil"/></g>
-<rect x="95" y="85" width="50" height="8" rx="4" fill="#1a1a2e" id="robotMouth"/>
-<rect x="100" y="87" width="10" height="4" rx="2" fill="url(#grad1)" opacity="0.6" id="mouthBar1"/>
-<rect x="115" y="87" width="10" height="4" rx="2" fill="url(#grad1)" opacity="0.6" id="mouthBar2"/>
-<rect x="130" y="87" width="10" height="4" rx="2" fill="url(#grad1)" opacity="0.6" id="mouthBar3"/>
-<rect x="105" y="110" width="30" height="15" rx="5" fill="url(#headGrad)" stroke="url(#grad1)" stroke-width="1.5"/>
-<rect x="50" y="125" width="140" height="110" rx="20" fill="url(#headGrad)" stroke="url(#grad1)" stroke-width="2"/>
-<rect x="70" y="140" width="100" height="60" rx="10" fill="#1a1a2e"/>
-<rect x="75" y="145" width="90" height="50" rx="7" fill="url(#screenGrad)" opacity="0.3"/>
-<text x="120" y="168" text-anchor="middle" fill="url(#grad1)" font-size="10" font-family="JetBrains Mono" id="screenText">READY</text>
-<rect x="85" y="178" width="30" height="4" rx="2" fill="url(#grad1)" opacity="0.3"/>
-<rect x="85" y="185" width="50" height="4" rx="2" fill="url(#grad1)" opacity="0.2"/>
-<g id="leftArm"><rect x="20" y="135" width="30" height="15" rx="7" fill="url(#headGrad)" stroke="url(#grad1)" stroke-width="1.5"/><rect x="15" y="150" width="20" height="50" rx="10" fill="url(#headGrad)" stroke="url(#grad1)" stroke-width="1.5"/><circle cx="25" cy="205" r="12" fill="url(#headGrad)" stroke="url(#grad1)" stroke-width="1.5"/></g>
-<g id="rightArm"><rect x="190" y="135" width="30" height="15" rx="7" fill="url(#headGrad)" stroke="url(#grad1)" stroke-width="1.5"/><rect x="205" y="150" width="20" height="50" rx="10" fill="url(#headGrad)" stroke="url(#grad1)" stroke-width="1.5"/><circle cx="215" cy="205" r="12" fill="url(#headGrad)" stroke="url(#grad1)" stroke-width="1.5"/></g>
-<rect x="75" y="235" width="25" height="45" rx="10" fill="url(#headGrad)" stroke="url(#grad1)" stroke-width="1.5"/>
-<rect x="140" y="235" width="25" height="45" rx="10" fill="url(#headGrad)" stroke="url(#grad1)" stroke-width="1.5"/>
-<rect x="65" y="275" width="40" height="15" rx="7" fill="url(#headGrad)" stroke="url(#grad1)" stroke-width="1.5"/>
-<rect x="130" y="275" width="40" height="15" rx="7" fill="url(#headGrad)" stroke="url(#grad1)" stroke-width="1.5"/>
-<defs><linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3B82F6"/><stop offset="50%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#06B6D4"/></linearGradient><linearGradient id="headGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f8f9fa"/><stop offset="100%" stop-color="#e9ecef"/></linearGradient><linearGradient id="screenGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3B82F6" stop-opacity="0.5"/><stop offset="100%" stop-color="#7C3AED" stop-opacity="0.5"/></linearGradient></defs>
-</svg></div>
-<div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-32 h-6 bg-gradient-to-r from-electric-blue/20 via-deep-purple/20 to-cyan-glow/20 blur-xl rounded-full"></div>
-</div></div>
-<div class="section-fade" style="transition-delay:.2s">
-<div class="glass-card rounded-xl sm:rounded-2xl overflow-hidden">
-<div class="px-4 sm:px-6 py-3 sm:py-4 border-b border-gray-100 flex items-center gap-2 sm:gap-3">
-<div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-electric-blue to-deep-purple flex items-center justify-center"><span class="iconify text-white" data-icon="lucide:bot" data-width="14"></span></div>
-<div><div class="text-xs sm:text-sm font-semibold">Afrisoft AI Agent</div><div class="text-[9px] sm:text-[10px] text-green-500 font-medium">● Online</div></div>
-</div>
-<div class="p-4 sm:p-6 space-y-3 sm:space-y-4 max-h-[250px] sm:max-h-[300px] overflow-y-auto" id="chatArea">
-<div class="chat-msg show flex gap-2 sm:gap-3">
-<div class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-gradient-to-br from-electric-blue to-deep-purple flex items-center justify-center shrink-0 mt-0.5"><span class="iconify text-white" data-icon="lucide:bot" data-width="12"></span></div>
-<div class="bg-secondary rounded-2xl rounded-tl-md px-3 sm:px-4 py-2 sm:py-3 max-w-[85%]"><p class="text-xs sm:text-sm text-gray-600">Hi! I'm the Afrisoft AI Agent. Click below to see what I can do. 👋</p></div>
-</div></div>
-<div class="px-4 sm:px-6 pb-4 sm:pb-6 flex flex-wrap gap-1.5 sm:gap-2">
-<button class="ai-chat-btn text-[10px] sm:text-xs font-medium px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl border border-electric-blue/20 text-electric-blue hover:bg-electric-blue/5 transition-colors" data-response="I handle customer support 24/7 — answering questions, resolving issues, and escalating complex cases without human intervention. Response time drops from hours to seconds." data-screen="SUPPORT">🛟 Customer Support</button>
-<button class="ai-chat-btn text-[10px] sm:text-xs font-medium px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl border border-deep-purple/20 text-deep-purple hover:bg-deep-purple/5 transition-colors" data-response="I qualify leads automatically, book appointments, send follow-ups, and nurture prospects through your pipeline — even while you sleep." data-screen="LEADS">🎯 Lead Generation</button>
-<button class="ai-chat-btn text-[10px] sm:text-xs font-medium px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl border border-cyan-glow/20 text-cyan-glow hover:bg-cyan-glow/5 transition-colors" data-response="I schedule, reschedule, and confirm appointments instantly. I send reminders and sync with your calendar automatically." data-screen="BOOKING">📅 Appointment Booking</button>
-<button class="ai-chat-btn text-[10px] sm:text-xs font-medium px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl border border-green-500/20 text-green-600 hover:bg-green-500/5 transition-colors" data-response="I analyze your business data, generate reports, spot trends, and provide actionable insights for smarter decisions." data-screen="ANALYTICS">📊 Data Analytics</button>
-</div></div></div></div></div>
-</section>
-
 <!-- TESTIMONIALS -->
 <section class="py-16 sm:py-24 relative overflow-hidden">
 <div class="max-w-7xl mx-auto px-4 sm:px-6">
@@ -554,76 +393,6 @@ We design websites, AI systems, mobile apps, automation tools, and digital exper
 <div class="flex items-center gap-2 sm:gap-3"><div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-cyan-glow to-electric-blue flex items-center justify-center text-white font-bold text-xs">MO</div><div><div class="text-xs sm:text-sm font-semibold">Michael Osei</div><div class="text-[10px] sm:text-xs text-gray-400">UrbanStyle Store</div></div></div></div>
 </div></div>
 </section>
-
-<!-- PRICING -->
-<section class="py-16 sm:py-24 bg-secondary relative overflow-hidden" id="pricing">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-10 sm:mb-16 section-fade">
-<span class="text-[10px] sm:text-xs font-semibold tracking-[0.15em] sm:tracking-[0.2em] text-electric-blue uppercase">Pricing</span>
-<h2 class="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight mt-3 sm:mt-4 mb-3 sm:mb-4">Simple, Transparent <span class="gradient-text">Pricing</span></h2>
-<p class="text-gray-500 font-light text-sm sm:text-lg max-w-2xl mx-auto px-2">Choose the plan that fits your business.</p>
-</div>
-<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 max-w-5xl mx-auto">
-<div class="glass-card rounded-xl sm:rounded-2xl p-6 sm:p-8 section-fade" style="transition-delay:.05s">
-<div class="text-[10px] sm:text-xs font-semibold tracking-wider text-gray-400 uppercase mb-3 sm:mb-4">Startup</div>
-<div class="flex items-baseline gap-1 mb-1 sm:mb-2"><span class="text-3xl sm:text-4xl font-extrabold">MWK 300,000</span></div>
-<p class="text-xs sm:text-sm text-gray-500 mb-6 sm:mb-8">Perfect for small businesses getting started.</p>
-<ul class="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-600"><span class="iconify text-green-500" data-icon="lucide:check" data-width="14"></span>Custom Website (5 pages)</li>
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-600"><span class="iconify text-green-500" data-icon="lucide:check" data-width="14"></span>Mobile Responsive</li>
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-600"><span class="iconify text-green-500" data-icon="lucide:check" data-width="14"></span>Basic SEO Setup</li>
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-600"><span class="iconify text-green-500" data-icon="lucide:check" data-width="14"></span>1 Month Support</li>
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-400"><span class="iconify text-gray-300" data-icon="lucide:x" data-width="14"></span>AI Integration</li>
-</ul>
-<button onclick="openPricingInterest('Startup — MWK 300,000')" class="btn-secondary w-full">Get Started</button>
-</div>
-<div class="pricing-popular rounded-xl sm:rounded-2xl p-6 sm:p-8 section-fade relative" style="transition-delay:.1s">
-<div class="absolute -top-2.5 left-1/2 -translate-x-1/2 px-3 sm:px-4 py-0.5 sm:py-1 bg-gradient-to-r from-electric-blue to-deep-purple text-white text-[10px] sm:text-xs font-semibold rounded-full whitespace-nowrap">Most Popular</div>
-<div class="text-[10px] sm:text-xs font-semibold tracking-wider text-electric-blue uppercase mb-3 sm:mb-4">Business</div>
-<div class="flex items-baseline gap-1 mb-1 sm:mb-2"><span class="text-3xl sm:text-4xl font-extrabold">MWK 750,000</span></div>
-<p class="text-xs sm:text-sm text-gray-500 mb-6 sm:mb-8">For growing businesses that need more power.</p>
-<ul class="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-600"><span class="iconify text-green-500" data-icon="lucide:check" data-width="14"></span>Custom Website (15 pages)</li>
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-600"><span class="iconify text-green-500" data-icon="lucide:check" data-width="14"></span>AI Chat Agent</li>
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-600"><span class="iconify text-green-500" data-icon="lucide:check" data-width="14"></span>Advanced SEO</li>
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-600"><span class="iconify text-green-500" data-icon="lucide:check" data-width="14"></span>E-Commerce Ready</li>
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-600"><span class="iconify text-green-500" data-icon="lucide:check" data-width="14"></span>3 Months Support</li>
-</ul>
-<button onclick="openPricingInterest('Business — MWK 750,000')" class="btn-primary w-full">Get Started</button>
-</div>
-<div class="glass-card rounded-xl sm:rounded-2xl p-6 sm:p-8 section-fade" style="transition-delay:.15s">
-<div class="text-[10px] sm:text-xs font-semibold tracking-wider text-gray-400 uppercase mb-3 sm:mb-4">Enterprise</div>
-<div class="flex items-baseline gap-1 mb-1 sm:mb-2"><span class="text-3xl sm:text-4xl font-extrabold">Custom</span></div>
-<p class="text-xs sm:text-sm text-gray-500 mb-6 sm:mb-8">Large-scale solutions for complex needs.</p>
-<ul class="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-600"><span class="iconify text-green-500" data-icon="lucide:check" data-width="14"></span>Everything in Business</li>
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-600"><span class="iconify text-green-500" data-icon="lucide:check" data-width="14"></span>Custom Software</li>
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-600"><span class="iconify text-green-500" data-icon="lucide:check" data-width="14"></span>Mobile App Development</li>
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-600"><span class="iconify text-green-500" data-icon="lucide:check" data-width="14"></span>Cloud Infrastructure</li>
-<li class="flex items-center gap-2 text-xs sm:text-sm text-gray-600"><span class="iconify text-green-500" data-icon="lucide:check" data-width="14"></span>12 Months Support</li>
-</ul>
-<a href="#contact" class="btn-secondary w-full">Contact Us</a>
-</div>
-</div></div>
-</section>
-
-<!-- PRICING INTEREST MODAL -->
-<div class="modal-overlay" id="pricingModal" onclick="if(event.target===this)closePricingModal()">
-<div class="modal-content p-5 sm:p-8">
-<div class="flex items-center justify-between mb-5 sm:mb-6">
-<h3 class="text-lg sm:text-xl font-bold">Interested in <span class="gradient-text" id="pricingPlanName"></span></h3>
-<button onclick="closePricingModal()" class="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors"><span class="iconify" data-icon="lucide:x" data-width="16"></span></button>
-</div>
-<p class="text-sm text-gray-500 mb-5 sm:mb-6">Leave your details and our team will contact you shortly.</p>
-<form id="pricingForm" class="space-y-4">
-<input type="hidden" name="type" value="pricing_interest">
-<input type="hidden" name="plan" id="pricingPlanField">
-<input type="text" name="name" required placeholder="Your Full Name" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue/30 focus:border-electric-blue/50 transition-all placeholder:text-gray-300">
-<input type="email" name="email" required placeholder="Email Address" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue/30 focus:border-electric-blue/50 transition-all placeholder:text-gray-300">
-<input type="tel" name="phone" required placeholder="Phone Number" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue/30 focus:border-electric-blue/50 transition-all placeholder:text-gray-300">
-<button type="submit" class="btn-primary w-full !py-3.5" id="pricingSubmitBtn"><span id="pricingSubmitText">Submit</span><span id="pricingSubmitLoader" class="hidden items-center justify-center gap-2"><span class="iconify animate-spin" data-icon="lucide:loader-2" data-width="16"></span> Sending...</span></button>
-</form></div>
-</div>
 
 <!-- HOSTING -->
 <section class="py-16 sm:py-24 relative overflow-hidden">
@@ -656,7 +425,7 @@ We design websites, AI systems, mobile apps, automation tools, and digital exper
 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-electric-blue/10 rounded-full blur-[150px]"></div>
 <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10 section-fade">
 <h2 class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-5 sm:mb-6">Ready To Build Something <span class="gradient-text-alt">Extraordinary?</span></h2>
-<p class="text-sm sm:text-lg text-gray-400 font-light max-w-2xl mx-auto mb-8 sm:mb-10 px-2">Whether you need a website, AI system, mobile app, or complete digital transformation — Afrisoft Online can help you move faster into the future.</p>
+<p class="text-sm sm:text-lg text-gray-400 font-light max-w-2xl mx-auto mb-8 sm:mb-10 px-2">Whether you need a website, AI system, mobile app, or complete digital transformation — we're right here in Blantyre, ready to help.</p>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
 <button onclick="openConsultation()" class="btn-primary !text-sm sm:!text-base !py-3.5 sm:!py-4 !px-8 sm:!px-10">Book Consultation</button>
 <a href="#services" class="btn-secondary !text-white !border-white/20 !text-sm sm:!text-base !py-3.5 sm:!py-4 !px-8 sm:!px-10 hover:!border-electric-blue/50 hover:!text-electric-blue hover:!bg-electric-blue/5">Explore Services</a>
@@ -674,7 +443,6 @@ We design websites, AI systems, mobile apps, automation tools, and digital exper
 <form id="consultForm" class="space-y-4">
 <input type="hidden" name="type" value="consultation">
 <input type="text" name="name" required placeholder="Your Full Name" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue/30 focus:border-electric-blue/50 transition-all placeholder:text-gray-300">
-<input type="email" name="email" required placeholder="Email Address" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue/30 focus:border-electric-blue/50 transition-all placeholder:text-gray-300">
 <input type="tel" name="phone" required placeholder="Phone Number" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue/30 focus:border-electric-blue/50 transition-all placeholder:text-gray-300">
 <select name="service" required class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue/30 focus:border-electric-blue/50 transition-all text-gray-500">
 <option value="" disabled selected>What do you need?</option>
@@ -704,14 +472,12 @@ We design websites, AI systems, mobile apps, automation tools, and digital exper
 <h2 class="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight mt-3 sm:mt-4 mb-5 sm:mb-6">Let's Start Your <span class="gradient-text">Project</span></h2>
 <p class="text-gray-500 font-light text-sm sm:text-lg mb-6 sm:mb-8">Tell us about your project and we'll respond within hours.</p>
 <div class="space-y-4 sm:space-y-6">
-<div class="flex items-center gap-3 sm:gap-4"><div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-electric-blue/10 flex items-center justify-center shrink-0"><span class="iconify text-electric-blue" data-icon="lucide:mail" data-width="18"></span></div><div><div class="text-xs sm:text-sm font-semibold">Email Us</div><div class="text-xs sm:text-sm text-gray-500">support@afrisoft.store</div></div></div>
-<div class="flex items-center gap-3 sm:gap-4"><div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-deep-purple/10 flex items-center justify-center shrink-0"><span class="iconify text-deep-purple" data-icon="lucide:phone" data-width="18"></span></div><div><div class="text-xs sm:text-sm font-semibold">Call Us</div><div class="text-xs sm:text-sm text-gray-500">0882 549 277 / 0981 954 171</div></div></div>
+<div class="flex items-center gap-3 sm:gap-4"><div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-deep-purple/10 flex items-center justify-center shrink-0"><span class="iconify text-deep-purple" data-icon="lucide:phone" data-width="18"></span></div><div><div class="text-xs sm:text-sm font-semibold">Call Us</div><div class="text-xs sm:text-sm text-gray-500">0882 549 277</div><div class="text-xs sm:text-sm text-gray-500">0981 954 171</div></div></div>
 <div class="flex items-center gap-3 sm:gap-4"><div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-cyan-glow/10 flex items-center justify-center shrink-0"><span class="iconify text-cyan-glow" data-icon="lucide:map-pin" data-width="18"></span></div><div><div class="text-xs sm:text-sm font-semibold">Location</div><div class="text-xs sm:text-sm text-gray-500">Blantyre, Malawi</div></div></div>
 </div></div>
 <div class="section-fade" style="transition-delay:.2s">
 <form id="contactForm" action="https://formspree.io/f/xvznopka" method="POST" class="glass-card rounded-xl sm:rounded-2xl p-5 sm:p-8 space-y-4 sm:space-y-5">
 <input type="text" name="name" required placeholder="Full Name" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue/30 focus:border-electric-blue/50 transition-all placeholder:text-gray-300">
-<input type="email" name="email" required placeholder="Email Address" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue/30 focus:border-electric-blue/50 transition-all placeholder:text-gray-300">
 <input type="tel" name="phone" required placeholder="Phone Number" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue/30 focus:border-electric-blue/50 transition-all placeholder:text-gray-300">
 <select name="service" required class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue/30 focus:border-electric-blue/50 transition-all text-gray-500">
 <option value="" disabled selected>Select a service...</option>
@@ -735,14 +501,13 @@ We design websites, AI systems, mobile apps, automation tools, and digital exper
 <!-- FOOTER -->
 <footer class="bg-charcoal text-white py-12 sm:py-16">
 <div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 sm:gap-8 mb-10 sm:mb-12">
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 mb-10 sm:mb-12">
 <div class="col-span-2 sm:col-span-3 md:col-span-1">
 <div class="flex items-center gap-2 mb-3 sm:mb-4"><div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-electric-blue to-deep-purple flex items-center justify-center"><span class="text-white font-bold text-xs sm:text-sm">A</span></div><span class="font-bold text-sm sm:text-base">Afrisoft<span class="text-electric-blue">Online</span></span></div>
-<p class="text-xs sm:text-sm text-gray-400 leading-relaxed">Building the future of business technology, one solution at a time.</p>
+<p class="text-xs sm:text-sm text-gray-400 leading-relaxed">Building the future of business technology in Malawi, one solution at a time.</p>
 </div>
 <div><h4 class="text-xs sm:text-sm font-semibold mb-3 sm:mb-4">Services</h4><ul class="space-y-1.5 sm:space-y-2"><li><a href="#services" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Web Development</a></li><li><a href="#services" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">AI Agents</a></li><li><a href="#services" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Mobile Apps</a></li><li><a href="#services" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Business Software</a></li></ul></div>
-<div><h4 class="text-xs sm:text-sm font-semibold mb-3 sm:mb-4">Solutions</h4><ul class="space-y-1.5 sm:space-y-2"><li><a href="#work" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Healthcare</a></li><li><a href="#work" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Finance</a></li><li><a href="#work" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">E-Commerce</a></li><li><a href="#work" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Security</a></li></ul></div>
-<div><h4 class="text-xs sm:text-sm font-semibold mb-3 sm:mb-4">Company</h4><ul class="space-y-1.5 sm:space-y-2"><li><a href="#" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">About Us</a></li><li><a href="#process" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Our Process</a></li><li><a href="#pricing" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Pricing</a></li><li><a href="#contact" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Contact</a></li></ul></div>
+<div><h4 class="text-xs sm:text-sm font-semibold mb-3 sm:mb-4">Company</h4><ul class="space-y-1.5 sm:space-y-2"><li><a href="#process" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Our Process</a></li><li><a href="#work" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Our Work</a></li><li><a href="#contact" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Contact</a></li></ul></div>
 <div><h4 class="text-xs sm:text-sm font-semibold mb-3 sm:mb-4">Legal</h4><ul class="space-y-1.5 sm:space-y-2"><li><a href="#" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li><li><a href="#" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Terms of Service</a></li><li><a href="#" class="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Support</a></li></ul></div>
 </div>
 <div class="border-t border-white/10 pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
@@ -760,115 +525,34 @@ We design websites, AI systems, mobile apps, automation tools, and digital exper
 const isMobile='ontouchstart' in window||navigator.maxTouchPoints>0;
 const cursor=document.getElementById('cursor'),cursorGlow=document.getElementById('cursorGlow');
 let mx=window.innerWidth/2,my=window.innerHeight/2,cx=mx,cy=my;
-
-if(!isMobile){
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
-(function anim(){cx+=(mx-cx)*.15;cy+=(my-cy)*.15;cursor.style.left=cx+'px';cursor.style.top=cy+'px';cursorGlow.style.left=mx+'px';cursorGlow.style.top=my+'px';requestAnimationFrame(anim)})();
-document.querySelectorAll('a,button,[data-tilt],.ai-chat-btn').forEach(el=>{el.addEventListener('mouseenter',()=>cursor.classList.add('hover'));el.addEventListener('mouseleave',()=>cursor.classList.remove('hover'))})}
-
-// HERO PARALLAX
+if(!isMobile){document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});(function a(){cx+=(mx-cx)*.15;cy+=(my-cy)*.15;cursor.style.left=cx+'px';cursor.style.top=cy+'px';cursorGlow.style.left=mx+'px';cursorGlow.style.top=my+'px';requestAnimationFrame(a)})();document.querySelectorAll('a,button,[data-tilt]').forEach(el=>{el.addEventListener('mouseenter',()=>cursor.classList.add('hover'));el.addEventListener('mouseleave',()=>cursor.classList.remove('hover'))})}
 const floats=document.querySelectorAll('.floating-el');
-function updateParallax(px,py){const wc=window.innerWidth/2,hc=window.innerHeight/2,dx=(px-wc)/wc,dy=(py-hc)/hc;floats.forEach(el=>{const s=parseFloat(el.dataset.speed)||.02;el.style.transform=`translate(${dx*s*800}px,${dy*s*800}px)`})}
-if(!isMobile){document.addEventListener('mousemove',e=>updateParallax(e.clientX,e.clientY))}
-else{document.addEventListener('touchmove',e=>updateParallax(e.touches[0].clientX,e.touches[0].clientY),{passive:true})}
-
-// PARTICLES
+function up(px,py){const wc=window.innerWidth/2,hc=window.innerHeight/2,dx=(px-wc)/wc,dy=(py-hc)/hc;floats.forEach(el=>{const s=parseFloat(el.dataset.speed)||.02;el.style.transform=`translate(${dx*s*800}px,${dy*s*800}px)`})}
+if(!isMobile)document.addEventListener('mousemove',e=>up(e.clientX,e.clientY));
+else document.addEventListener('touchmove',e=>up(e.touches[0].clientX,e.touches[0].clientY),{passive:true});
 const canvas=document.getElementById('particles'),ctx=canvas.getContext('2d');let particles=[];
 function rc(){canvas.width=window.innerWidth;canvas.height=window.innerHeight}rc();window.addEventListener('resize',rc);
 class P{constructor(){this.r()}r(){this.x=Math.random()*canvas.width;this.y=Math.random()*canvas.height;this.s=Math.random()*1.5+.5;this.sx=(Math.random()-.5)*.3;this.sy=(Math.random()-.5)*.3;this.o=Math.random()*.3+.1}u(){if(!isMobile){const dx=this.x-mx,dy=this.y-my,d=Math.sqrt(dx*dx+dy*dy);if(d<150){this.x+=dx/d*.5;this.y+=dy/d*.5}}this.x+=this.sx;this.y+=this.sy;if(this.x<0||this.x>canvas.width||this.y<0||this.y>canvas.height)this.r()}d(){ctx.beginPath();ctx.arc(this.x,this.y,this.s,0,Math.PI*2);ctx.fillStyle=`rgba(59,130,246,${this.o})`;ctx.fill()}}
-for(let i=0;i<40;i++)particles.push(new P());
-(function ap(){ctx.clearRect(0,0,canvas.width,canvas.height);particles.forEach(p=>{p.u();p.d()});requestAnimationFrame(ap)})();
-
-// 3D TILT
+for(let i=0;i<40;i++)particles.push(new P());(function ap(){ctx.clearRect(0,0,canvas.width,canvas.height);particles.forEach(p=>{p.u();p.d()});requestAnimationFrame(ap)})();
 document.querySelectorAll('[data-tilt]').forEach(card=>{const ref=card.querySelector('.glass-reflection');
 card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top,rcx=r.width/2,rcy=r.height/2;card.style.transform=`perspective(1000px) rotateX(${((y-rcy)/rcy)*-8}deg) rotateY(${((x-rcx)/rcx)*8}deg) scale3d(1.02,1.02,1.02)`;if(ref)ref.style.background=`radial-gradient(circle at ${x}px ${y}px,rgba(255,255,255,0.15) 0%,transparent 60%)`});
 card.addEventListener('mouseleave',()=>{card.style.transform='perspective(1000px) rotateX(0) rotateY(0) scale3d(1,1,1)';if(ref)ref.style.background='transparent'})});
-
-// MAGNETIC
 if(!isMobile){document.querySelectorAll('.btn-primary,.btn-secondary').forEach(el=>{el.addEventListener('mousemove',e=>{const r=el.getBoundingClientRect();el.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.15}px,${(e.clientY-r.top-r.height/2)*.15}px)`});el.addEventListener('mouseleave',()=>{el.style.transform=''})})}
-
-// SCROLL ANIMATIONS
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.section-fade').forEach(el=>obs.observe(el));
-
-// COUNTERS
 const cobs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const el=e.target,t=parseInt(el.dataset.target);let c=0;const inc=t/60;const tm=setInterval(()=>{c+=inc;if(c>=t){c=t;clearInterval(tm)}el.textContent=Math.floor(c)},25);cobs.unobserve(el)}})},{threshold:.5});
 document.querySelectorAll('.counter').forEach(el=>cobs.observe(el));
-
-// MOBILE MENU
 const mb=document.getElementById('mobileMenuBtn'),mm=document.getElementById('mobileMenu');let mo=false;
 mb.addEventListener('click',()=>{mo=!mo;mm.style.transform=mo?'translateX(0)':'translateX(100%)';document.getElementById('ml1').style.transform=mo?'rotate(45deg) translate(4px,4px)':'';document.getElementById('ml2').style.opacity=mo?'0':'1';document.getElementById('ml3').style.transform=mo?'rotate(-45deg) translate(3px,-3px)':''});
 document.querySelectorAll('.ml').forEach(l=>l.addEventListener('click',()=>{mo=false;mm.style.transform='translateX(100%)';document.getElementById('ml1').style.transform='';document.getElementById('ml2').style.opacity='1';document.getElementById('ml3').style.transform=''}));
-
-// NAVBAR SCROLL
 window.addEventListener('scroll',()=>{document.getElementById('navbar').style.boxShadow=window.scrollY>80?'0 4px 30px rgba(0,0,0,0.05)':'none'});
-
-// AI ROBOT EYES
-const le=document.getElementById('leftEye'),re=document.getElementById('rightEye'),lp=document.getElementById('leftPupil'),rp=document.getElementById('rightPupil'),rs=document.getElementById('robotSvg'),rb=document.getElementById('robotBody'),st=document.getElementById('screenText'),mb2=[document.getElementById('mouthBar1'),document.getElementById('mouthBar2'),document.getElementById('mouthBar3')],ra=document.getElementById('rightArm');
-function ue(px,py){const r=rs.getBoundingClientRect(),rcx=r.left+r.width/2,rcy=r.top+r.height*.2,dx=px-rcx,dy=py-rcy,d=Math.max(Math.sqrt(dx*dx+dy*dy),1),m=4,ox=dx/d*m,oy=dy/d*m;le.setAttribute('cx',95+ox);le.setAttribute('cy',60+oy);re.setAttribute('cx',145+ox);re.setAttribute('cy',60+oy);lp.setAttribute('cx',92+ox+ox*.3);lp.setAttribute('cy',57+oy+oy*.3);rp.setAttribute('cx',142+ox+ox*.3);rp.setAttribute('cy',57+oy+oy*.3)}
-if(!isMobile)document.addEventListener('mousemove',e=>ue(e.clientX,e.clientY));
-else document.addEventListener('touchmove',e=>ue(e.touches[0].clientX,e.touches[0].clientY),{passive:true});
-const rm=['HELLO!','THINKING...','PROCESSING','ANALYZING','READY!','LEARNING','OPTIMIZING'];
-rs.style.cursor='pointer';
-rs.addEventListener('click',()=>{rb.classList.add('robot-bounce');setTimeout(()=>rb.classList.remove('robot-bounce'),500);ra.classList.add('robot-wave');setTimeout(()=>ra.classList.remove('robot-wave'),600);mb2.forEach(b=>{b.setAttribute('height','8');b.setAttribute('y','85')});setTimeout(()=>mb2.forEach(b=>{b.setAttribute('height','4');b.setAttribute('y','87')}),400);st.textContent=rm[Math.floor(Math.random()*rm.length)];st.setAttribute('fill','#06B6D4');setTimeout(()=>st.setAttribute('fill','url(#grad1)'),800)});
-
-// AI CHAT
-const ca=document.getElementById('chatArea');
-document.querySelectorAll('.ai-chat-btn').forEach(btn=>{btn.addEventListener('click',()=>{const resp=btn.dataset.response,scr=btn.dataset.screen;
-const um=document.createElement('div');um.className='chat-msg flex gap-2 sm:gap-3 justify-end';um.innerHTML=`<div class="bg-gradient-to-r from-electric-blue to-deep-purple rounded-2xl rounded-tr-md px-3 sm:px-4 py-2 sm:py-3 max-w-[85%]"><p class="text-xs sm:text-sm text-white">${btn.textContent.trim()}</p></div>`;ca.appendChild(um);setTimeout(()=>um.classList.add('show'),50);
-setTimeout(()=>{const bm=document.createElement('div');bm.className='chat-msg flex gap-2 sm:gap-3';bm.innerHTML=`<div class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-gradient-to-br from-electric-blue to-deep-purple flex items-center justify-center shrink-0 mt-0.5"><span class="iconify text-white" data-icon="lucide:bot" data-width="12"></span></div><div class="bg-secondary rounded-2xl rounded-tl-md px-3 sm:px-4 py-2 sm:py-3 max-w-[85%]"><p class="text-xs sm:text-sm text-gray-600">${resp}</p></div>`;ca.appendChild(bm);setTimeout(()=>bm.classList.add('show'),50);st.textContent=scr;rb.classList.add('robot-bounce');setTimeout(()=>rb.classList.remove('robot-bounce'),500);mb2.forEach(b=>{b.setAttribute('height','8');b.setAttribute('y','85')});setTimeout(()=>mb2.forEach(b=>{b.setAttribute('height','4');b.setAttribute('y','87')}),600);ca.scrollTop=ca.scrollHeight},600);ca.scrollTop=ca.scrollHeight})});
-
-// PROJECT MODALS
-const projectData={
-renmal:{title:'Renmal Capital Limited',subtitle:'Microfinance Website',color:'from-blue-600 to-indigo-600',
-desc:'Renmal Capital Limited is a microfinance company based in Blantyre, Malawi. They trusted Afrisoft Online to build their website — a platform where their users come when they need a loan. The site was designed to be professional, trustworthy, and easy to navigate, helping Renmal Capital connect with clients and streamline their loan application process.',
-btns:[{text:'Visit Site',url:'https://www.renmalcapitallimited.xyz',primary:true}]},
-store:{title:'Afrisoft Store',subtitle:'Software Showcase Platform',color:'from-purple-600 to-fuchsia-600',
-desc:'When our advanced computational and software department needed a website to showcase the software products they are building, they reached out to us. We built them a website that captures people\'s attention and perfectly represents the Afrisoft ecosystem. This is proof that even internally, we rely on and trust each other for excellence — if our own team trusts us with their brand, imagine what we can do for yours.',
-btns:[{text:'Visit Afrisoft Store',url:'https://afrisoft.store',primary:true}]},
-moneyos:{title:'Money OS',subtitle:'Payment & Loan Tracking Platform',color:'from-emerald-600 to-teal-600',
-desc:'Money OS is a powerful application used for tracking payments and loans for microfinance companies. Trusted by over 100 microfinance institutions, Money OS handles everything from loan disbursement to payment collection, client management, and financial reporting. If your business involves lending money, Money OS is the backbone you need to run operations smoothly and efficiently.',
-btns:[{text:'Learn More',url:'https://afrisoft.store',primary:true}]},
-nexguard:{title:'NexGuard',subtitle:'Radio Wave Security System',color:'from-red-600 to-orange-600',dev:true,
-desc:'NexGuard uses advanced radio wave technology to detect motion and secure your home. It notifies you instantly when there is a visitor or any unauthorized entry into your home or room — no matter where you are. Unlike traditional security systems, NexGuard\'s radio wave detection works through walls and doesn\'t require line of sight, making it incredibly reliable.',
-waitlist:true,product:'NexGuard'},
-pos:{title:'Afrisoft Online POS',subtitle:'Point of Sale System',color:'from-sky-600 to-blue-600',
-desc:'Afrisoft Online POS is a modern point-of-sale system built for speed and reliability. Features include real-time inventory tracking, multi-branch synchronization, sales analytics, receipt printing, barcode scanning, offline mode, and seamless payment integration. Designed for retail shops, restaurants, and service businesses that need a POS that just works.',
-waitlist:true,product:'Afrisoft Online POS'}
-};
-window.openProject=function(key){
-const d=projectData[key],mc=document.getElementById('projectModalContent');
-let html=`<div class="flex items-center justify-between mb-4 sm:mb-5"><div><h3 class="text-lg sm:text-xl font-bold">${d.title}</h3><p class="text-xs sm:text-sm text-gray-500">${d.subtitle}</p></div><button onclick="closeProject()" class="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors shrink-0"><span class="iconify" data-icon="lucide:x" data-width="16"></span></button></div>`;
-if(d.dev)html+=`<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 mb-4"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span><span class="text-xs font-semibold text-amber-700">In Development</span></div>`;
-html+=`<p class="text-sm text-gray-600 leading-relaxed mb-5 sm:mb-6">${d.desc}</p>`;
-if(d.waitlist){html+=`<form id="waitlistForm_${key}" class="space-y-3 mb-4"><input type="hidden" name="type" value="waitlist"><input type="hidden" name="product" value="${d.product}"><input type="email" name="email" required placeholder="Enter your email to join the waitlist" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue/30 focus:border-electric-blue/50 placeholder:text-gray-300"><input type="tel" name="phone" placeholder="Phone number (optional)" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white/80 text-sm focus:outline-none focus:ring-2 focus:ring-electric-blue/30 focus:border-electric-blue/50 placeholder:text-gray-300"><button type="submit" class="btn-primary w-full !py-3">Join Waitlist</button></form>`}
-if(d.btns){html+=`<div class="flex flex-col sm:flex-row gap-2 sm:gap-3">`;d.btns.forEach(b=>{html+=b.primary?`<a href="${b.url}" target="_blank" rel="noopener" class="btn-primary flex-1 !py-3">${b.text}</a>`:`<a href="${b.url}" target="_blank" rel="noopener" class="btn-secondary flex-1 !py-3">${b.text}</a>`});html+=`</div>`}
-mc.innerHTML=html;document.getElementById('projectModal').classList.add('active');
-if(d.waitlist){document.getElementById(`waitlistForm_${key}`).addEventListener('submit',async e=>{e.preventDefault();const fd=new FormData(e.target);try{const r=await fetch('https://formspree.io/f/xvznopka',{method:'POST',body:fd,headers:{'Accept':'application/json'}});if(r.ok){showToast('You\'re on the waitlist! We\'ll notify you.','success');e.target.reset()}else showToast('Something went wrong. Try again.','error')}catch(err){showToast('Network error.','error')}})}};
-window.closeProject=function(){document.getElementById('projectModal').classList.remove('active')};
-
-// PRICING INTEREST MODAL
-window.openPricingInterest=function(plan){document.getElementById('pricingPlanName').textContent=plan;document.getElementById('pricingPlanField').value=plan;document.getElementById('pricingModal').classList.add('active')};
-window.closePricingModal=function(){document.getElementById('pricingModal').classList.remove('active')};
-document.getElementById('pricingForm').addEventListener('submit',async e=>{e.preventDefault();const btn=document.getElementById('pricingSubmitBtn');document.getElementById('pricingSubmitText').classList.add('hidden');document.getElementById('pricingSubmitLoader').classList.remove('hidden');document.getElementById('pricingSubmitLoader').style.display='flex';btn.disabled=true;try{const r=await fetch('https://formspree.io/f/xvznopka',{method:'POST',body:new FormData(e.target),headers:{'Accept':'application/json'}});if(r.ok){showToast('Submitted! Our team will contact you soon.','success');closePricingModal();e.target.reset()}else showToast('Something went wrong.','error')}catch(err){showToast('Network error.','error')}finally{document.getElementById('pricingSubmitText').classList.remove('hidden');document.getElementById('pricingSubmitLoader').classList.add('hidden');document.getElementById('pricingSubmitLoader').style.display='';btn.disabled=false}});
-
-// CONSULTATION MODAL
 window.openConsultation=function(){document.getElementById('consultModal').classList.add('active')};
 window.closeConsultation=function(){document.getElementById('consultModal').classList.remove('active')};
 document.getElementById('consultForm').addEventListener('submit',async e=>{e.preventDefault();const btn=document.getElementById('consultSubmitBtn');document.getElementById('consultSubmitText').classList.add('hidden');document.getElementById('consultSubmitLoader').classList.remove('hidden');document.getElementById('consultSubmitLoader').style.display='flex';btn.disabled=true;try{const r=await fetch('https://formspree.io/f/xvznopka',{method:'POST',body:new FormData(e.target),headers:{'Accept':'application/json'}});if(r.ok){showToast('Consultation booked! We\'ll contact you within hours.','success');closeConsultation();e.target.reset()}else showToast('Something went wrong.','error')}catch(err){showToast('Network error.','error')}finally{document.getElementById('consultSubmitText').classList.remove('hidden');document.getElementById('consultSubmitLoader').classList.add('hidden');document.getElementById('consultSubmitLoader').style.display='';btn.disabled=false}});
-
-// CONTACT FORM
 document.getElementById('contactForm').addEventListener('submit',async e=>{e.preventDefault();document.getElementById('submitText').classList.add('hidden');document.getElementById('submitLoader').classList.remove('hidden');document.getElementById('submitLoader').style.display='flex';document.getElementById('submitBtn').disabled=true;try{const r=await fetch('https://formspree.io/f/xvznopka',{method:'POST',body:new FormData(e.target),headers:{'Accept':'application/json'}});if(r.ok){showToast('Message sent! We\'ll contact you soon.','success');e.target.reset()}else showToast('Something went wrong.','error')}catch(err){showToast('Network error.','error')}finally{document.getElementById('submitText').classList.remove('hidden');document.getElementById('submitLoader').classList.add('hidden');document.getElementById('submitLoader').style.display='';document.getElementById('submitBtn').disabled=false}});
-
 function showToast(msg,type){const t=document.getElementById('toast');t.textContent=msg;t.className=`toast toast-${type} show`;setTimeout(()=>t.classList.remove('show'),4000)}
-
-// SMOOTH SCROLL
 document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}})});
-
-// ESC to close modals
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeProject();closePricingModal();closeConsultation()}});
-
-// INITIAL HERO ANIM
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeConsultation()});
 setTimeout(()=>document.querySelectorAll('#hero .section-fade').forEach(el=>el.classList.add('visible')),200);
 })();
 </script>
